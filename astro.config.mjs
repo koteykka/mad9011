@@ -49,9 +49,9 @@ export default defineConfig({
           items: [
             // Each item here is one entry in the navigation menu.
             { label: 'Deliverables Summary', slug: 'deliverables/summary' },
-            { label: 'Exercises', slug: 'deliverables/exercises' },
-            { label: 'Assignments', slug: 'deliverables/assignments' },
-            { label: 'Projects', slug: 'deliverables/projects' },
+           // { label: 'Exercises', slug: 'deliverables/exercises' },
+           // { label: 'Assignments', slug: 'deliverables/assignments' },
+           // { label: 'Projects', slug: 'deliverables/projects' },
           ],
         },
         {
