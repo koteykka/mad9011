@@ -1,0 +1,36 @@
+table {
+  width: 100%;
+  table-layout: auto;
+  display: table;
+}
+tr {
+  display: table-row;
+}
+th,
+td {
+  display: table-cell;
+}
+
+.video-title {
+  text-align: end;
+  border-top: 1px solid #ccc;
+}
+
+iframe {
+  min-height: 350px;
+  width: 100%;
+}
+pre,
+code {
+  max-width: 100%;
+  margin-block: 2rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+pre::before {
+  content: attr(data-language);
+  font-weight: 700;
+  background-color: yellow;
+  color: black;
+  padding-inline: 1ch;
+}

@@ -1,0 +1,35 @@
+---
+title: Welcome to MAD9011 for F2025
+description: Learn about design software for web and mobile
+template: splash
+hero:
+  tagline: Learning Photoshop, Illustrator, SVG, and Figma!
+  image:
+    file: ../../assets/hero.png
+  actions:
+    - text: Jump to Course content
+      link: modules/week1/
+      icon: right-arrow
+    - text: Read the Course Overview
+      link: overview/
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+  <Card title="Overview" icon="laptop">
+    View the [overview details about the course](/overview/).
+  </Card>
+  <Card title="Modules" icon="add-document">
+    View the [overview details about the course](/modules/week1).
+  </Card>
+  <Card title="Deliverables" icon="node">
+    View the [Projects, Assignments, and Exercises for the course](/deliverables/summary).
+  </Card>
+  <Card title="Resources" icon="open-book">
+    View the [resources and conventions related to the course](/references/resources).
+  </Card>
+</CardGrid>

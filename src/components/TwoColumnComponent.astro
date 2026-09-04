@@ -1,0 +1,62 @@
+---
+import type { ImageMetadata } from "astro";
+// import { getImage } from "astro:assets";
+
+interface Props {
+  title?: string;
+  description?: string;
+  imageSrc?: string;
+  imageSize?: string;
+}
+
+const { title="", description="", imageSize="50px", imageSrc="" } = Astro.props;
+
+// const Image = await getImage({
+//     src: imageSrc,
+//     format: "webp",
+//     width: 200,
+//     height: 200,
+// });
+---
+
+
+<div class="two-column-component">
+  <div class="first-column">
+    <img src={imageSrc} style="imageStyle" alt={title} />
+  </div>
+  <div class="column">
+    <h4>{{ title }}</h4>
+    <p>{{ description }}</p>
+  </div>
+</div>
+
+<style scoped>
+.two-column-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eaecef;
+}
+
+.column,
+.first-column {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.first-column {
+  max-width: fit-content;
+  align-items: center;
+}
+
+a {
+  color: #3eaf7c;
+  text-decoration: underline;
+}
+
+h4 {
+  margin: 0;
+}
+</style>
