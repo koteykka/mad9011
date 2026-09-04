@@ -1,7 +1,7 @@
 {
   "name": "MAD9011 - Mobile Design Tools",
   "type": "module",
-  "version": "1.0.58",
+  "version": "1.0.60",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "predeploy": "npm version patch --no-git-tag-version && astro build",
-    "deploy": "git add -A && echo 'added' && git commit -m '🙏🔥 updated' && echo 'committed' && git push origin main"
+    "deploy": "git add -A && echo \"added\" && git commit -m \"updated\" && echo \"committed\" && git push origin main"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.34.3",
