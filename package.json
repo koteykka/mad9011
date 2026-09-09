@@ -1,7 +1,7 @@
 {
   "name": "MAD9011 - Mobile Design Tools",
   "type": "module",
-  "version": "1.0.72",
+  "version": "1.0.73",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
