@@ -56,14 +56,14 @@ You can install the Creative Cloud Application on as many computers as you wish,
 
 By the end of this week, students will be able to:
 
-1. **Understand Raster Graphics:** Grasp how Photoshop handles pixel-based images, including the significance of resolution and image quality.
-2. **Size Images for Screens:**Work in pixel dimensions rather than PPI, and export assets at the sizes modern phones actually need.
-3. **Differentiate File Types:** Identify PSD, JPEG, PNG, SVG, and choose the right one for a given asset.
+1. **Understand Raster vs. Vector:** Grasp how Photoshop handles pixel-based images, and recognize why a raster logo can't be enlarged while a vector one can.
+2. **Size of Screens:**Work in pixel dimensions and set up documents at the exact size a platform requires.
+3. **Differentiate File Types:** Identify PSD, JPEG, PNG, GIF, and SVG, and choose the right one for a given asset.
 4. **Navigate Photoshop Interface:** Familiarize with the layout, tools, panels, and menus, and learn workspace customization.
 5. **Master Layers:** Understand layer creation, naming, grouping, management, and styling.
-6. **Utilize Core Tools:** Gain proficiency in selection tools, image resizing, and basic masking.
+6. **Work with Artboards:** Understand the difference between a canvas and an artboard, and set up a document for multiple design sizes.
 7. **Apply Nondestructive Editing:** earn the difference between destructive and nondestructive editing, keeping an editable working file separate from exported output using masks and Smart Objects.
-8. **Design Across Formats:**Build a single artboard-based document and export one campaign concept at desktop, square, and vertical sizes.
+8. **Build and Export a Banner:**Create a banner at a specified size and export it in the correct format.
 
 </Aside>
 
@@ -86,24 +86,55 @@ Adobe Photoshop's interface is a complex environment with various tools and feat
 ![Image 7](../../../assets/week1/psInterface/7.png)
 ![Image 8](../../../assets/week1/psInterface/8.png)
 
-### 1.2 Canvases and Artboards
+### 1.1 Raster and Vector Graphics
 
-In Photoshop, **canvases** and **artboards** are essential for organizing your workspace. Though they share some similarities, they cater to different design needs.
+Every image you work with is one of two kinds. Knowing which is which will save you a lot of grief.
 
-#### Photoshop Canvas
+Raster images are made of pixels — a fixed grid of tiny coloured squares. Each pixel holds data about colour and brightness. Photographs and screenshots are always raster. Photoshop is a raster program.
 
-- **Single Design Focus:** The canvas is the base area where your design or image resides. It’s like a single piece of digital paper where you create and manipulate your artwork.
-- **Best for Single Images:** Ideal for projects that focus on one design or image, such as photo editing, illustration, or digital painting.
+Vector images are made of mathematical paths — points, lines and curves. Nothing is stored as a grid, so the shape is redrawn at whatever size you need. Logos, icons and illustrations are usually vector.
 
-#### Photoshop Artboards
+## Why this matters immediately
 
-- **Multiple Design Areas:** Artboards enable you to create multiple design areas within a single document. They’re like having several canvases in one file, perfect for working on multiple variations of a project at once.
-- **Organize & Export with Ease:** You can easily name, rearrange, and export individual artboards. This makes them ideal for projects with multiple layouts, like website designs, social media posts, or UI mockups.
+Scaling a raster image down is safe. Scaling it up is not. There's no extra detail hiding in the file, so Photoshop invents pixels to fill the gaps and the result goes soft.
 
-#### Common Features: Canvas & Artboards
+This is the most common problem you'll hit professionally. A client sends their logo as a 300px PNG, you need it across the top of a banner, and it can't be done — not because you lack skill, but because the pixels aren't there. What you needed was the vector file.
 
-- **Adjustable Size:** Both canvases and artboards allow you to change their size at any point, making it easy to expand or crop your working area to suit the project’s requirements.
-- **Background Options:** Whether you’re working with a canvas or an artboard, you can set the background to be solid (any color) or transparent. This is useful when creating designs for web graphics, layering, or composite images.
+Rule of thumb: photographs are raster and should be sourced as large as possible. Logos and icons should be vector wherever you can get them.
+
+#### 1.2 Sizing Images for Screens
+
+Everything in this course is made for screens, so there's only one number that matters: pixel dimensions.
+
+Every platform publishes the exact pixel size it wants. You design at that size, and you export at that size.
+
+When you create a new document, set the units to Pixels and enter the exact size. Don't design at a guess and resize later — start at the size you're delivering.
+
+###2. The Photoshop Interface
+-**Menu bar** — top of the screen. Everything lives here somewhere.
+-**Options bar** — settings for whichever tool is active. It changes as you switch tools.
+-**Toolbar** — left side. Hold-click any tool with a small triangle to reveal related tools underneath.
+-**Panels** — right side. Layers, Properties, Colour and more. Add or remove them from the Window menu.
+-**Canvas** — centre, where your work lives.
+-**Contextual Task Bar** — a floating bar that appears near your work and offers the most likely next action.
+
+##Workspaces
+
+Photoshop ships with preset workspaces under Window → Workspace, each showing a different set of panels. Once you've arranged panels the way you like, save your own with Window → Workspace → New Workspace.
+
+####  Canvas & Artboards
+
+##The Canvas
+
+The canvas is the base area where your design lives — a single piece of digital paper. Ideal for projects focused on one image: photo editing, illustration, digital painting.
+
+##Artboards
+
+Artboards let you hold multiple design areas inside one document. Like having several canvases in one file.
+
+This is exactly what banner work needs. One campaign, three sizes, one document. Same images, same colours, same type, all in one place — so when something changes, you change it once.
+
+You can name, rearrange and export artboards individually or all together.
 
 ![Canvas Vs Artboards](../../../assets/canvasVsArtboards.png)
 
