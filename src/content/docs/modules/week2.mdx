@@ -10,174 +10,150 @@ import YouTube from '../../../components/YouTube.astro';
 
 By the end of this week, students will be able to:
 
-1. **Master Advanced Retouching Tools:** Utilize tools like Clone Stamp, Healing Brush, Patch Tool, and Generative Fill for photo repair.
-2. **Implement Content-Aware Techniques:** Apply content-aware fill and other content-aware tools to seamlessly remove unwanted elements from images.
-3. **Employ Non-Destructive Editing Methods:** Practice retouching and editing without altering the original image data.
+1. **Make Selections:** Isolate part of an image using Object Selection.
+2. **Use Layer Masks:** Hide parts of a layer without erasing them, and refine a mask by painting black and white.
+3. **Clean Up a Photo:** Remove distracting elements from a background using the Spot Healing Brush, Content-Aware Fill, and Generative Fill.
+4. **Organize a Layered File:** Group layers, apply layer styles, and lock layers to protect them.
+5. **Use Smart Objects:** Understand what a Smart Object is, why transforms stay lossless, and how one edit updates every copy.
+6. **Adapt a Layout Across Formats:** Reflow a design for horizontal, square, and vertical shapes while keeping one visual identity.
+7. **Export a Campaign:** Export all artboards at the correct sizes with proper file naming.
+
 
 </Aside>
 
-## 1. Introduction to Advanced Retouching
+### 1. Making Selections
 
-![Retouching Banner](../../../assets/retouching-banner.jpg)
+A selection isolates part of an image so you can work on that area without affecting the rest. Cutting a product out of its background is the most common single task in banner design.
 
-Explore advanced tools and techniques in Photoshop for retouching images, focusing on maintaining image quality and non-destructive editing methods. Learn to address common issues like blemishes, unwanted elements, and distractions using Photoshop's powerful toolkit, all while preserving the integrity of the original photo.
+## The two you'll use most:
 
-## 2. Retouching Tools Overview
+Object Selection tool — hover over an element and Photoshop identifies it; click to select
+Select Subject — one command, isolates the main subject of the image
 
-![Retouching Tools](../../../assets/retouching-tools.png)
+Other selection tools you'll come across:
 
-- **Clone Stamp Tool:** Replicate pixels from one area to another, ideal for covering unwanted elements.
-- **Healing Brush & Spot Healing Brush Tools:** Blend and repair imperfections seamlessly by adjusting pixels to match their surroundings.
-- **Patch Tool:** Cover larger flawed areas by dragging a good part of the photo over them, especially effective on flat surfaces.
-- **Generative Fill (New):** Automatically generate new content in an image using AI to fill or extend backgrounds.
-- **Red Eye Tool Alternatives:** Learn alternative, non-destructive methods to fix red-eye effects.
+Quick Selection tool — paint roughly over an area and Photoshop expands the selection to match edges
+Magic Wand — selects areas of similar colour. Useful when your product sits on a flat, even background
 
----
+### 2. Layer Masks
 
-### Clone Stamp Tool
+A layer mask hides parts of a layer without erasing them. Nothing is deleted, so you can always bring the hidden pixels back.
 
-![Clone Stamp Tool](../../../assets/tool-icon-clone-stamp.svg)
+To add a mask:
 
-The Clone Stamp Tool is often called the rubber stamp tool for a reason. It works similarly by sampling pixels from one area and replicating them in another. This is useful for covering unwanted elements, such as blemishes or distractions.
+**Make** your selection.
+**Click Add Layer Mask** at the bottom of the Layers panel.
+**Everything** outside your selection is now hidden.
 
-![Clone Stamp Tool Image 1](../../../assets/week2/clone-stamp-tool/1.png)
-![Clone Stamp Tool Image 2](../../../assets/week2/clone-stamp-tool/2.png)
-![Clone Stamp Tool Image 3](../../../assets/week2/clone-stamp-tool/3.png)
-![Clone Stamp Tool Image 4](../../../assets/week2/clone-stamp-tool/4.png)
+To refine it: paint on the mask with a soft brush. Black hides, white brings back.
 
-<Aside type="tip" title="Tip">
+The Eraser tool deletes pixels permanently. A layer mask hides them reversibly. In this course, use masks.
 
-Create a new empty layer called <strong>Retouching</strong>. Do not duplicate the photo's layer. This allows you to maintain a non-destructive workflow.
+### 3. Cleaning Up a Photo
 
-</Aside>
+Sometimes a good product photo has one bad thing in it — a sign, a stray hand, a logo you can't use. These tools handle almost every case.
+Spot Healing Brush
 
----
+Click on a small blemish and Photoshop blends it with the surrounding pixels. No sampling needed. Best for small, isolated marks.
 
-### 2.2 Healing Brush Tool
+## Content-Aware Fill
 
-![Healing Brush Tool](../../../assets/tool-icon-healing-brush.svg)
+Make a selection, then Edit → Content-Aware Fill. Photoshop fills the area using surrounding content, and you can paint to control which areas it samples from.
 
-The Healing Brush Tool works similarly to the Clone Stamp Tool but is smarter. After sampling an area, the tool adjusts the pixels to match the surrounding area for seamless blending. It’s great for retouching small imperfections, such as skin blemishes.
+In the Content-Aware Fill dialogue, set Output to: New Layer.
 
-![Healing Brush Tool Image 1](../../../assets/week2/healing-brush-tool/1.png)
-![Healing Brush Tool Image 2](../../../assets/week2/healing-brush-tool/2.png)
-![Healing Brush Tool Image 3](../../../assets/week2/healing-brush-tool/3.png)
-![Healing Brush Tool Image 4](../../../assets/week2/healing-brush-tool/4.png)
+## Generative Fill
 
----
+Select an area and describe what should be there. Best used for extending a background to fit an artboard the photo wasn't shot for.
 
-### 2.3 Spot Healing Brush Tool
+Where generative tools help and where they don't They're good for removing distractions and extending backgrounds. They're unreliable for text, fine detail, and anything needing precision — they won't match a brand colour or reproduce a logo correctly. And running the same prompt twice gives you two different results, which is a problem when your three banners need to match.
 
-![Clone Stamp tool icon](../../../assets/tool-icon-spot-healing-brush.svg]
+### 4. Layer Craft
 
-The Spot Healing Brush is quick and easy to use, requiring no sampling. You simply click on blemishes, and Photoshop automatically blends the area with the surrounding pixels. Adjust the brush diameter and hardness as needed, and always work on a new, empty layer to keep your edits non-destructive.
+Your banner will end up with a dozen or more layers. These are the habits that keep it workable.
 
-![Spot Healing Brush Tool Image 1](../../../assets/week2/spot-healing-brush-tool/1.png)
-![Spot Healing Brush Tool Image 2](../../../assets/week2/spot-healing-brush-tool/2.png)
-![Spot Healing Brush Tool Image 3](../../../assets/week2/spot-healing-brush-tool/3.png)
+## Grouping — select related layers and press Cmd/Ctrl + G. Name the group. A banner with groups for background, product, text and cleanup is readable at a glance.
 
----
+## Layer styles — double-click a layer to open Layer Style. The ones you'll use on banners:
 
-### Patch Tool
+**Drop Shadow** — lifts a headline off a busy photo
+**Stroke** — outlines a button or a cut-out product
+**Gradient Overlay** — adds depth to a button or a colour block
 
-![Patch Tool](../../../assets/tool-icon-patch-tool.svg]
+## Locking — click the lock icon to protect a layer from accidental edits. Lock your background once it's positioned and it will stop shifting every time you click.
 
-The Patch Tool is ideal for fixing larger blemishes or imperfections on flat surfaces. You drag a good section of the image over the flawed area, and Photoshop blends it with the surrounding pixels.
 
-![Patch Tool Image 1](../../../assets/week2/patch-tool/1.png)
-![Patch Tool Image 2](../../../assets/week2/patch-tool/2.png)
-![Patch Tool Image 3](../../../assets/week2/patch-tool/3.png)
-![Patch Tool Image 4](../../../assets/week2/patch-tool/4.png)
+### 5. Making Text Readable Over an Image
 
-<Aside type="tip" title="Tip">
+The most common failure in banner design is a headline you can't read. Three fixes, in order of preference:
 
-Set the tool to `Content Aware` and work on a new empty layer for a more seamless blend with the surrounding content.
+**1. Move the text.** Find a quieter area of the photo. Cheapest solution and usually the best one.
 
-</Aside>
+**2. Darken the area behind it.** Add a black layer above the image, mask it to just the region under your text, and lower the opacity. A gradient along one edge works well and looks deliberate.
 
----
+*3. Adjust the image.** Click the New Adjustment Layer icon at the bottom of the Layers panel. Adjustments affect every layer beneath them — right-click and Create Clipping Mask to confine one to a single layer.
 
-### Red Eye Tool
+The two you'll use most:
 
-![Red Eye Tool](../../../assets/tool-icon-red-eye.svg)
+## Brightness/Contrast — quick correction of a flat or overexposed photo
+## Hue/Saturation — adjust colour intensity, or desaturate a background so the product stands out
 
-!['Red Eye Image 1'](../../../assets/week2/redeye-tool/1.png)
-!['Red Eye Image 2'](../../../assets/week2/redeye-tool/2.png)
+### 6. Smart Objects
 
-<Aside type="tip" title="Red Eye Tool Alternative">
+## What is a Smart Object?
 
-Instead of using the Red Eye Tool, apply a **Hue/Saturation Adjustment Layer** to desaturate the red in the eyes, preserving detail in the pupils.
+A normal layer is just pixels. When you scale it down, Photoshop throws away the pixels it no longer needs — and they're gone for good.
 
-#### Steps:
+A Smart Object is a container that holds the original image inside it. What you see on your canvas is a live preview of that original, not the original itself. Photoshop keeps the full-quality source tucked away, so every transform is applied to the preview rather than the actual pixels.
 
-1. Create a **Hue/Saturation Adjustment Layer** and set the saturation to -100.
-2. Invert the mask to black, then paint over the red eyes with a soft white brush.
-3. Adjust the settings as needed to make the eyes look natural.
+Two things follow from that.
 
-</Aside>
+**Transforms stay lossless.** Scale a Smart Object down, then back up, and it returns at full quality, because the original was never touched. Do that to a normal layer and the detail is gone permanently.
 
-## 3. Generative Fill (New)
+**One edit updates every copy.** Copies of a Smart Object all point back to the same source. Edit that source once and every copy updates. This is what keeps three banners consistent — change the product photo once instead of three times.
 
-<video width="100%" height="auto" controls autoplay muted>
-  <source src="/generative-fill.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+**To create one:** right-click a layer → Convert to Smart Object. Or place images with File → Place Embedded, which makes them Smart Objects automatically.
 
-Generative Fill is a new AI-powered feature in Photoshop that allows you to generate content in your images automatically. By selecting an area, you can use this tool to fill it with relevant generated content, whether you’re extending backgrounds or removing objects. Generative Fill is perfect for removing large objects, extending backgrounds, or generating entirely new scenes in an image. Checkout all the things you can do with generative fill [here](https://www.adobe.com/ca/products/photoshop/ai.html).
+**To edit one:** double-click its thumbnail in the Layers panel. It opens in a new tab. Make your changes, save with Cmd/Ctrl + S, close the tab, and every copy updates.
 
-### 3.1 How to Use Generative Fill
+### 7. Adapting Your Layout Across Formats
 
-1. **Select an Area:** Use any selection tool to highlight the area you want to modify.
-2. **Activate Generative Fill:** After selecting, click on the Generative Fill button or use the `Edit > Generative Fill` option.
-3. **Generate Content:** Photoshop will analyze the surrounding pixels and generate new content to fill the selected area. You can guide the fill by typing a description (e.g., "fill with ocean").
-4. **Non-Destructive Workflow:** Like with other tools, always work on a new layer to maintain flexibility.
+Your three banners share a campaign. They do not share a layout.
 
-## 4. Content Aware Tools
+**Same:** colours, typefaces, imagery, message. Different: where everything sits. Horizontal puts text beside the image, square balances them, vertical stacks them.
+**Safe zones (vertical only).** On Stories and Reels, platform buttons sit over your design. Keep your headline and call to action out of the top ~250 px and bottom ~350 px. Your background image can still fill the whole frame.
 
-The **Content Aware Tools** in Photoshop are incredibly powerful for removing unwanted elements from an image. Simply make a selection, then choose `Edit > Fill > Content Aware Fill`, and Photoshop will automatically fill in the area with surrounding content.
+### 8. Exporting
 
-![Content Aware Fill](../../../assets/content-aware-fill-2.jpg)
+Export all artboards with File → Export → Export As.
 
-### 4.1 Content Aware Fill Options
+Choose PNG for banners with crisp text and graphics.
+Select which artboards to include, or export all at once.
+Photoshop names files from your artboard names, so check those first.
 
-- **Output to New Layer:** Always select this option to keep the fill on a new layer, allowing for non-destructive editing.
-- **Sampling Area Options:** In the Content Aware Fill dialogue, you can define which areas Photoshop should sample by painting in or out the green highlight sections.
+## Naming conventions
 
-### 4.2 Key Points to Remember
+**1. Lowercase, no spaces** — banner-square, not Banner Square
+**2. Hyphens** rather than underscores
+**3. Descriptive, not positional** — banner-vertical, not banner-3
 
-1. **Non-Destructive Workflow:** Always create new layers for retouching to keep the original image intact.
-2. **Leverage AI Tools:** Use new AI-powered tools like Generative Fill to streamline complex retouching tasks.
-3. **Stay Flexible:** Keep your layers organized and editable by using Adjustment Layers, Layer Masks, and Smart Objects.
 
-## 5. Skin Smoothing Smart Filter
+#### Additional
 
-The **Skin Smoothing** smart filter in Photoshop is a powerful tool designed to enhance portraits by smoothing skin while preserving important details, such as skin texture and facial features. This filter is part of the **Neural Filters** feature, which uses AI to achieve professional results with minimal effort.
+## Shortcuts:
 
-#### 5.1 How to Use the Skin Smoothing Filter
+| **Action**                       | **Mac**                                                               | **Windows**                                                |
+| ---------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Undo**         | Cmd + Z | Ctrl + Z             |
+| **Group layers**    | Cmd + G                                              | Ctrl + G |
+| **Free Transform** | Cmd + T                                  | Ctrl + T     |
+| **Duplicate layer**              | Cmd + J                                                | Ctrl + J       |
+| **Deselect**    | Cmd + D                                              | Ctrl + D |
+| **Brush size** | [ and ]                                  | [ and ]     |
+| **Fit to screen**              | Cmd + 0                                                | Ctrl + 0       |
 
-![Skin Smoothing Image 1](../../../assets/week2/skin-smoothing/1.png)
-![Skin Smoothing Image 2](../../../assets/week2/skin-smoothing/2.png)
-![Skin Smoothing Image 3](../../../assets/week2/skin-smoothing/3.png)
+## Type basics
 
-1. **Open the Image:** Begin by opening your portrait or image where skin smoothing is needed.
-2. **Convert to a Smart Object:** To ensure non-destructive editing, right-click on the layer and choose **Convert to Smart Object**.
-3. **Open Neural Filters:**
-   - Go to **Filter > Neural Filters**.
-   - In the Neural Filters panel, find **Skin Smoothing** under the **Featured Filters** section and toggle it on.
-4. **Adjust the Settings:**
-   - **Blur:** Controls the amount of skin smoothing applied.
-   - **Smoothness:** Adjusts the balance between natural skin texture and smoothing.
-5. **Preview and Apply:** Review the changes in real-time and fine-tune the sliders until you get the desired effect. Click **OK** to apply the filter.
-
-#### 5.2 Why Use the Skin Smoothing Smart Filter?
-
-- **Non-Destructive Workflow:** By converting the layer to a Smart Object, you can always go back and adjust the filter or remove it entirely.
-- **Quick & Professional Results:** The filter uses AI to identify skin areas and smooth them while keeping important details intact, making it faster than traditional manual techniques.
-- **Customization:** With adjustable sliders, you can control the level of smoothing and ensure the result matches your vision, whether you want a subtle touch-up or a more polished look.
-
-#### 5.3 Tips for Best Results
-
-- **Use Moderation:** Avoid over-smoothing, which can make the skin look unnatural. Aim for a balance that retains skin texture while minimizing imperfections.
-- **Combine with Other Techniques:** For a more refined result, combine the Skin Smoothing filter with other retouching tools like the Healing Brush or Clone Stamp to address specific blemishes.
-
-By incorporating the **Skin Smoothing Smart Filter** into your retouching workflow, you can save time and achieve professional-quality skin retouching with ease.
+**1.** Two typefaces maximum, or one with different weights
+**2.** Make the size difference between headline and supporting text obvious — timid contrast reads as a mistake
+**3.** Watch line spacing on big headlines, since the default is usually too loose
