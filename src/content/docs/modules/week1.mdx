@@ -86,7 +86,52 @@ Adobe Photoshop's interface is a complex environment with various tools and feat
 ![Image 7](../../../assets/week1/psInterface/7.png)
 ![Image 8](../../../assets/week1/psInterface/8.png)
 
-### 2. The Photoshop Interface
+
+
+### 1.1 Raster and Vector Graphics
+
+Every image you work with is one of two kinds. Knowing which is which will save you a lot of grief.
+
+Raster images are made of pixels — a fixed grid of tiny coloured squares. Each pixel holds data about colour and brightness. Photographs and screenshots are always raster. Photoshop is a raster program.
+
+Vector images are made of mathematical paths — points, lines and curves. Nothing is stored as a grid, so the shape is redrawn at whatever size you need. Logos, icons and illustrations are usually vector.
+
+## Why this matters immediately
+
+Scaling a raster image down is safe. Scaling it up is not. There's no extra detail hiding in the file, so Photoshop invents pixels to fill the gaps and the result goes soft.
+
+This is the most common problem you'll hit professionally. A client sends their logo as a 300px PNG, you need it across the top of a banner, and it can't be done — not because you lack skill, but because the pixels aren't there. What you needed was the vector file.
+
+Rule of thumb: photographs are raster and should be sourced as large as possible. Logos and icons should be vector wherever you can get them.
+
+
+### 2. Sizing Images for Screens
+
+Everything in this course is made for screens, so there's only one number that matters: pixel dimensions.
+
+Every platform publishes the exact pixel size it wants. You design at that size, and you export at that size.
+
+When you create a new document, set the units to Pixels and enter the exact size. Don't design at a guess and resize later — start at the size you're delivering.
+
+| **Format**                       | **Size**                                                               | **Where it Runs**                                                |
+| ---------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Horizontal**         | 1200 × 628 px | 	Feed and link ads             |
+| **Square**    | 	1080 × 1080 px                                              | 	Instagram feed |
+| **Vertical** | 	1080 × 1920 px                                  | 	Stories and Reels     |
+
+
+## Differentiate File Types
+
+| **Format**                       | **Type**                                                               | **Best for**                                                |
+| ---------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------ |
+| **PSD**         | Raster (layered) | 	Your working file — layers and masks preserved. The file you keep, not the file you send             |
+| **JPEG**    | 	Raster                | 	Photographs. Lossy, so every re-save degrades it further |
+| **PNG** | 	Raster                    | 	Banners, UI assets, anything needing crisp edges or transparency     |
+| **GIF**    | 	Raster                  | 	Simple animation, maximum 256 colours |
+| **SVG** | 	Vector                    | 		Icons and logos. Scales infinitely. Made in Illustrator, not Photoshop     |
+
+
+### 4.The Photoshop Interface
 - **Menu bar** — top of the screen. Everything lives here somewhere.
 - **Options bar** — settings for whichever tool is active. It changes as you switch tools.
 - **Toolbar** — left side. Hold-click any tool with a small triangle to reveal related tools underneath.
@@ -94,17 +139,17 @@ Adobe Photoshop's interface is a complex environment with various tools and feat
 - **Canvas** — centre, where your work lives.
 - **Contextual Task Bar** — a floating bar that appears near your work and offers the most likely next action.
 
-##Workspaces
+## Workspaces
 
 Photoshop ships with preset workspaces under Window → Workspace, each showing a different set of panels. Once you've arranged panels the way you like, save your own with Window → Workspace → New Workspace.
 
 ####  Canvas & Artboards
 
-##The Canvas
+## The Canvas
 
 The canvas is the base area where your design lives — a single piece of digital paper. Ideal for projects focused on one image: photo editing, illustration, digital painting.
 
-##Artboards
+## Artboards
 
 Artboards let you hold multiple design areas inside one document. Like having several canvases in one file.
 
@@ -131,38 +176,7 @@ For more details, check out the [Artboards in Photoshop User Guide](https://help
 By understanding when to use canvases and artboards, you'll streamline your workflow and handle complex design projects more efficiently in Photoshop.
 
 
-### 1.1 Raster and Vector Graphics
-
-Every image you work with is one of two kinds. Knowing which is which will save you a lot of grief.
-
-Raster images are made of pixels — a fixed grid of tiny coloured squares. Each pixel holds data about colour and brightness. Photographs and screenshots are always raster. Photoshop is a raster program.
-
-Vector images are made of mathematical paths — points, lines and curves. Nothing is stored as a grid, so the shape is redrawn at whatever size you need. Logos, icons and illustrations are usually vector.
-
-## Why this matters immediately
-
-Scaling a raster image down is safe. Scaling it up is not. There's no extra detail hiding in the file, so Photoshop invents pixels to fill the gaps and the result goes soft.
-
-This is the most common problem you'll hit professionally. A client sends their logo as a 300px PNG, you need it across the top of a banner, and it can't be done — not because you lack skill, but because the pixels aren't there. What you needed was the vector file.
-
-Rule of thumb: photographs are raster and should be sourced as large as possible. Logos and icons should be vector wherever you can get them.
-
-### 2 Sizing Images for Screens
-
-Everything in this course is made for screens, so there's only one number that matters: pixel dimensions.
-
-Every platform publishes the exact pixel size it wants. You design at that size, and you export at that size.
-
-When you create a new document, set the units to Pixels and enter the exact size. Don't design at a guess and resize later — start at the size you're delivering.
-
-| **Format**                       | **Size**                                                               | **Where it Runs**                                                |
-| ---------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Horizontal**         | 1200 × 628 px | 	Feed and link ads             |
-| **Square**    | 	1080 × 1080 px                                              | 	Instagram feed |
-| **Vertical** | 	1080 × 1920 px                                  | 	Stories and Reels     |
-
-
-## 2. Working with Layers
+### 4. Working with Layers
 
 Each layer is an independent stack of pixels you can reorder, hide, restyle or delete without touching anything else. This is what makes Photoshop editable rather than a one-shot paint program.
 
@@ -175,26 +189,7 @@ What you should be comfortable with this week:
 - **Layer styles: drop shadow, stroke, gradient overlay.**
 - **Locking layers to protect them from accidental edits.**
 
-### 2.1 Building Your First Banner
-
-In class we'll build one banner together from scratch. The steps:
-
-- **New document** — set the size to 1200 × 628 px, units in Pixels, RGB colour.
-- **Place your image** — File → Place Embedded.
-- **Position and scale** it to fill the frame.
-- **Add your headline** with the Type tool.
-- **Add a supporting line** and a call to action.
-- **Name every layer** as you create it.
-- **Export — File → Export → Export As → PNG.**
-
-
-## 3. Core Photoshop Techniques
-
-### 3.1 Working with Layers
-
-Layers are a cornerstone of Photoshop, providing flexibility and control over different elements of your image.
-
-<YouTube title="How to Use Layers: Photoshop | Adobe Creative Cloud" url="xRFBOcxjkQU?si=tFU3O8-DA0kYOqXI" />
+Pro Tip Naming and grouping isn't housekeeping, it's part of the work. A file someone else can open and understand is worth more than a beautiful one they can't. File organization is part of how your work is assessed in this course.
 
 ### 3.2 Making Selections
 
@@ -292,7 +287,19 @@ It is important to properly **name your artboards** as the `Export As` dialogue 
 ![Image 4](../../../assets/week1/psInterface/4.png)
 ![Image 5](../../../assets/week1/psInterface/5.png)
 
-## 6. Resources
+### 8. Building Your First Banner
+
+In class we'll build one banner together from scratch. The steps:
+
+- **New document** — set the size to 1200 × 628 px, units in Pixels, RGB colour.
+- **Place your image** — File → Place Embedded.
+- **Position and scale** it to fill the frame.
+- **Add your headline** with the Type tool.
+- **Add a supporting line** and a call to action.
+- **Name every layer** as you create it.
+- **Export — File → Export → Export As → PNG.**
+
+### Resources
 
 - [Photoshop User Guide](https://helpx.adobe.com/photoshop/user-guide.html)
 - [Photoshop Tool Galleries](https://helpx.adobe.com/photoshop/using/tools.html)
